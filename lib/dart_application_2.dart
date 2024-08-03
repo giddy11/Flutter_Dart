@@ -160,24 +160,117 @@ void practiceInheritance(){
   print((car2 as Car).noOfWheels);
 }
 
-class Vehicle {
+// class Vehicle {
 
-  void accelerate(){
-    speed+=10;
-  }
+//   void accelerate(){
+//     speed+=30;
+//   }
 
-  int speed = 10;
-  bool isEngineWorking = false;
-  bool isLightOn = true;
+//   int speed = 10;
+//   bool isEngineWorking = false;
+//   bool isLightOn = true;
+// }
+
+// class Car extends Vehicle {
+
+//   void printSomething(){
+//     print(noOfWheels);
+//   }
+
+//   // @override
+//   // void accelerate(){
+//   //   speed+=10;
+//   // }
+
+//   @override
+//   int accelerate(){
+//     super.noOfWheels = 9; // this modifies the content of the parent class. doesnt work with implements
+//     return speed + 10;
+//   }
+
+//   int noOfWheels = 4;
+
+// }
+
+
+//implements
+// class OtherClass {
+
+//   int speed2 = 10;
+//   bool isEngineWorking2 = false;
+//   bool isLightOn2 = true;
+//   int noOfWheels2 = 4;
+// }
+
+// class Vehicle {
+
+//   void accelerate(){
+//     print("accelerating");
+//   }
+
+//   int speed = 10;
+//   bool isEngineWorking = false;
+//   bool isLightOn = true;
+//   int noOfWheels = 4;
+
+// }
+
+// class Car implements Vehicle {
+//   @override
+//   bool isEngineWorking = true;
+
+//   @override
+//   bool isLightOn = false;
+
+//   @override
+//   int noOfWheels = 4;
+
+//   @override
+//   int speed = 20;
+  
+//   @override
+//   void accelerate() {
+//     // TODO: implement accelerate
+//     print("accelerating");
+//   }
+// }
+
+// class Truck extends OtherClass implements Vehicle {
+//   @override
+//   bool isEngineWorking = false;
+
+//   @override
+//   bool isLightOn = true;
+
+//   @override
+//   int noOfWheels = 3;
+
+//   @override
+//   int speed = 8;
+
+//   @override
+//   void accelerate() {
+//     // TODO: implement accelerate
+//   }
+  
+// }
+
+
+//abstract classes
+abstract class Vehicle {
+  void accelerate();
 }
 
 class Car extends Vehicle {
-
-  void printSomething(){
-    print(noOfWheels);
+  @override
+  void accelerate() {
+    // TODO: implement accelerate
   }
-
-  int noOfWheels = 4;
-
+  
 }
+
+// class Truck implements Vehicle {
+
+// }
+
 

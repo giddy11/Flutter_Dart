@@ -1,21 +1,16 @@
-// import 'package:dart_application_1/dart_application_1.dart' as dart_application_1;
-// import 'package:dart_application_1/dart_application_2.dart' as dart_application_2;
-// import 'package:dart_application_1/dart_application_3.dart' as dart_application_3;
-// import 'package:dart_application_1/dart_application_4.dart' as dart_application_4;
-import 'package:dart_application_1/dart_application_5.dart' as dart_application_5;
+import 'package:dart_application_1/string_manipulation.dart' as string_manipulation;
+import 'package:dart_application_1/list_manipulation.dart' as list_manipulation;
 
 void main(List<String> arguments) {
-  // dart_application_1.section1();
-  // dart_application_1.section2();
-  // dart_application_1.section3();
-  // dart_application_1.section4();
-  // dart_application_1.section5();
-  // dart_application_1.section6();
 
-  // dart_application_2.practiceClasses();
-  // dart_application_2.practiceInheritance();
+  string_manipulation.questionOne();
+  string_manipulation.questionTwo();
+  string_manipulation.questionThree();
 
-  // dart_application_4.streamsPractice();
 
-  dart_application_5.extensions();
+  list_manipulation.questionOne();
+  list_manipulation.questionTwo();
+  list_manipulation.questionThree();
+
+  
 }

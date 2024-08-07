@@ -207,11 +207,11 @@ void practiceException() async {
 //   });
 // }
 
-// Future<String> giveResultAfter2Sec() {
-//   return Future.delayed(Duration(seconds: 4), () async {
-//     return "Hey!!!!!!";
-//   });
-// }
+Future<String> giveResultAfter2Sec() {
+  return Future.delayed(Duration(seconds: 4), () async {
+    return "Hey!!!!!!";
+  });
+}
 
 void futurePractice() async {
   var url = Uri.https('jsonplaceholder.typicode.com', '/users/1');

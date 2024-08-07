@@ -33,7 +33,7 @@ void questionOne() {
 
 void questionTwo() async {
   Future<List<String>> getUsernames(List<String> server) async {
-    await Future.delayed(Duration(seconds: 5));
+    await Future.delayed(Duration(seconds: 3));
     
     List<String> newList = []; // Move the newList inside the function
 

@@ -1,4 +1,5 @@
 import 'package:dart_application_1/models/UserManagement/user.dart';
+import 'package:dart_application_1/repositories/authentication_repository.dart';
 import 'package:dart_application_1/repositories/user_repository.dart';
 
 class AuthenticationService {
@@ -7,15 +8,28 @@ class AuthenticationService {
     var newUser = User();
     newUser.email = email;
     newUser.password = password;
-
+    UserRepository.addUser(newUser);
     return newUser;
   }
+
+  // Method to login a user with email and password
+  static User? login(String email, String password) {
+    var user = AuthenticationRepository.getUserByEmail(email);
+
+    if (user != null && user.password == password) {
+      return user;
+    } else {
+      return null;
+    }
+  }
+
+  
 
   // Method to change the user's password
   static User changePassword(User user, String newPassword) {
     user.password = newPassword;
     user.dateUpdated = DateTime.now();
-    UserRepository.addUser(user);
+    AuthenticationRepository.changePassword(user);
     return user;
   }
   

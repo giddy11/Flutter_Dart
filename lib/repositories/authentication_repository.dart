@@ -7,4 +7,10 @@ class AuthenticationRepository {
     var existingUser = UserRepository.users.firstWhere((u) => u.userId==user.userId);
     existingUser.password = user.password;
   }
+
+  // Method to get a user by email
+  static User? getUserByEmail(String email) {
+    var index = UserRepository.users.indexWhere((user) => user.email == email);
+    return index != -1 ? UserRepository.users[index] : null;
+  }
 }

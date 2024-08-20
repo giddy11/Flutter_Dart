@@ -1,15 +1,14 @@
 class User {
-  User(this.userId) {
-    userId += 1;
+  static int _idCounter = 0;
+
+  User() {
+    userId = ++_idCounter;
   }
 
-  int userId;
-  String userName="";
-  String password="";
-  String email="";
-  String phoneNumber="";
+  late final int userId;
+  String password = "";
+  String email = "";
+  String phoneNumber = "";
   DateTime dateCreated = DateTime.now();
   DateTime dateUpdated = DateTime.now();
-
-  
 }

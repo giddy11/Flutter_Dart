@@ -1,5 +1,5 @@
 import 'package:dart_application_1/enums/enums.dart';
-import 'package:dart_application_1/models/AcedemicManagement/program_study.dart';
+import 'package:dart_application_1/models/AcademicManagement/program_study.dart';
 
 class Student {
   static int _idCounter = 0;

@@ -1,4 +1,4 @@
-import 'package:dart_application_1/models/AcedemicManagement/course.dart';
+import 'package:dart_application_1/models/AcademicManagement/course.dart';
 import 'package:dart_application_1/models/StudentManagement/student.dart';
 
 class Grade {

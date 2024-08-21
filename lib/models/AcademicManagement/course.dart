@@ -1,4 +1,4 @@
-import 'package:dart_application_1/models/AcedemicManagement/instructor.dart';
+import 'package:dart_application_1/models/AcademicManagement/instructor.dart';
 
 class Course {
   static int _idCounter = 0;

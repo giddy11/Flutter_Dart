@@ -1,5 +1,5 @@
 import 'package:dart_application_1/models/UserManagement/user.dart';
-import 'package:dart_application_1/repositories/user_repository.dart';
+import 'package:dart_application_1/repositories/UserManagementRepository/user_repository.dart';
 
 class UserService {
   static void updateUser(User user){

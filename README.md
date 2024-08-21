@@ -26,6 +26,7 @@ Authentication: User registration, login.
 
 Profile Management: View and edit personal information, change password
 
+
 2. ***Academic Management***
 
 **Properties:**
@@ -47,8 +48,6 @@ instructorID: ID of the assigned instructor.
 schedule: Time and date when the course is held.
 
 *Class Schedule*
-
-Class Schedule
 
 scheduleID: Unique identifier for the schedule.
 
@@ -87,7 +86,7 @@ Class Scheduling: Automated and manual scheduling of classes, lecture halls, and
 Grading System: Record and manage grades, grade calculation, and transcript generation.
 
 
-2. ***Student Management***
+3. ***Student Management***
 
 **Properties:**
 
@@ -129,7 +128,7 @@ Student: Create, Update, remove students
 ProgramOfStudy: Create, Update, remove program
 
 
-3. ***Faculty Management***
+4. ***Faculty Management***
 
 **Properties:**
 

@@ -1,5 +1,5 @@
 import 'package:dart_application_1/enums/enums.dart';
-import 'package:dart_application_1/models/AcedemicManagement/course.dart';
+import 'package:dart_application_1/models/AcademicManagement/course.dart';
 
 class ClassSchedule {
   static int _idCounter = 0;
